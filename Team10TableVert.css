@@ -56,7 +56,7 @@ th {
 	border:2px solid black;
 }
 
-#periodFour {
+.tableDrop {
 	height:8.7vw;
 	width:50%;
 	text-align: center;
@@ -65,11 +65,11 @@ th {
 }
 
 #imageBank {
+	overflow:auto;
 	position:absolute; left:51%;
 	height:60%;
 	width:48%;
 	background-color:#D0D3D4;
-	overflow-y: scroll;
 }
 
 .bankWrapper {
@@ -97,8 +97,8 @@ th {
 }
 
 .droppy {
-	height:100%;
-	width:100%;
+	height:100px;
+	width:100px;
 	margin: 0 auto;
 }
 
@@ -114,4 +114,12 @@ position:absolute;left:51%;top:65%;
 
 height: 100px;
 margin: 10px;
+}
+
+#trash {
+	width:75px;
+	height:75px;
+	background-color:grey;
+	margin-top:20px;
+	margin-left:200px;
 }

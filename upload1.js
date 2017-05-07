@@ -15,8 +15,8 @@ continue;
 var picReader = new FileReader();
 picReader.addEventListener("load",function(event){
 var picFile = event.target;
-$('<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)"></div>').appendTo('#imageBank').append("<img id='" + i + "'" + "class='droppy' src='" + picFile.result + "'" +
-"title='" + picFile.name + "draggable='true' ondragstart='drag(event)'/>");
+$('<div class="bankWrapper"></div>').appendTo('#imageBank').append("<img class='droppy' src='" + picFile.result + "'" +
+"title='" + picFile.name + "'/>");
 });
 //Read the image
 picReader.readAsDataURL(file);

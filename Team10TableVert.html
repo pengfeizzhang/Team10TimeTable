@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="dragDrop.js"></script>
 	<script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+  crossorigin="anonymous"></script>
+  <script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"
+  integrity="sha256-T0Vest3yCU7pafRw9r+settMBX6JkKN06dqBnpQ8d30="
   crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="Team10TableVert.css">
 	<title>Team 10 Scheduler</title>
@@ -26,53 +29,55 @@
 		</tr>
 		<tr>
 			<th>Period 1</th>
-			<td><div id="periodOne" ondrop="drop(event)" ondragover="allowDrop(event)"> </div></td>
+			<td><div class="tableDrop"> </div></td>
 		</tr>
 		<tr>
 			<th>Period 2</th>
-			<td><div id="periodTwo" ondrop="drop(event)" ondragover="allowDrop(event)"> </div></td>
+			<td><div class="tableDrop"> </div></td>
 		</tr>
 		<tr>
 			<th>Lunch</th>
-			<td><div id="lunch" ondrop="drop(event)" ondragover="allowDrop(event)"> </div></td>
+			<td><div class="tableDrop"> </div></td>
 		</tr>
 		<tr>
 			<th>Period 3</th>
-			<td><div id="periodThree" ondrop="drop(event)" ondragover="allowDrop(event)"> </div></td>
+			<td><div class="tableDrop"> </div></td>
 		</tr>
 		<tr>
 			<th>Period 4</th>
-			<td><div id="periodFour" ondrop="drop(event)" ondragover="allowDrop(event)"> </div></td>
+			<td><div class="tableDrop"> </div></td>
 
 
 		<div id="imageBank">
-		<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<img id="dragDrop1" class="droppy" draggable="true" ondragstart="drag(event)" src="art.jpeg">
+		<div class="bankWrapper">
+			<img id="dragDrop1" class="droppy" src="art.jpeg">
 		</div>
-		<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<img id="dragDrop2" class="droppy" draggable="true" ondragstart="drag(event)" src="basketball.png">
+		<div class="bankWrapper">
+			<img id="dragDrop2" class="droppy" src="basketball.png">
 		</div>
-		<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<img id="dragDrop3" class="droppy" draggable="true" ondragstart="drag(event)" src="books.jpg">
+		<div class="bankWrapper">
+			<img id="dragDrop3" class="droppy" src="books.jpg">
 		</div>
-		<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<img id="dragDrop4" class="droppy" draggable="true" ondragstart="drag(event)" src="catchUp.jpg">
+		<div class="bankWrapper">
+			<img id="dragDrop4" class="droppy" src="catchUp.jpg">
 		</div>
-		<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<img id="dragDrop5" class="droppy" draggable="true" ondragstart="drag(event)" src="football.png">
+		<div class="bankWrapper">
+			<img id="dragDrop5" class="droppy" src="football.png">
 		</div>
-		<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<img id="dragDrop6" class="droppy" draggable="true" ondragstart="drag(event)" src="lunch.png">
+		<div class="bankWrapper">
+			<img id="dragDrop6" class="droppy" src="lunch.png">
 		</div>
-		<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<img id="dragDrop7" class="droppy" draggable="true" ondragstart="drag(event)" src="movie.jpeg">
+		<div class="bankWrapper">
+			<img id="dragDrop7" class="droppy" src="movie.jpeg">
 		</div>
-		<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<img id="dragDrop8" class="droppy" draggable="true" ondragstart="drag(event)" src="peerBuddies.jpg">
+		<div class="bankWrapper">
+			<img id="dragDrop8" class="droppy" src="peerBuddies.jpg">
 		</div>
-		<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)">
-			<img id="dragDrop9" class="droppy" draggable="true" ondragstart="drag(event)" src="soccer.jpg">
+		<div class="bankWrapper">
+			<img id="dragDrop9" class="droppy" src="soccer.jpg">
 		</div>
 		</div>
+		<div id="trash">trash</div>
+		<script src="dragDropDelete.js"></script>
 </body>
 </html>
