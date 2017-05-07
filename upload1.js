@@ -1,9 +1,30 @@
-function readURL(e) {
-    if (this.files && this.files[0]) {
-        var reader = new FileReader();
-        $(reader).on('load', function(e) { $('#blah').attr('src', e.target.result); });
-        reader.readAsDataURL(this.files[0]);
-    }
+window.onload = function(){
+//Check File API support
+if(window.File && window.FileList && window.FileReader)
+{
+var filesInput = document.getElementById("files");
+filesInput.addEventListener("change", function(event){
+var files = event.target.files; //FileList object
+var output = document.getElementById("result");
+for(var i = 0; i< files.length; i++)
+{
+var file = files[i];
+//Only pics
+if(!file.type.match('image'))
+continue;
+var picReader = new FileReader();
+picReader.addEventListener("load",function(event){
+var picFile = event.target;
+$('<div class="bankWrapper" ondrop="drop(event)" ondragover="allowDrop(event)"></div>').appendTo('#imageBank').append("<img id='" + i + "'" + "class='droppy' src='" + picFile.result + "'" +
+"title='" + picFile.name + "draggable='true' ondragstart='drag(event)'/>");
+});
+//Read the image
+picReader.readAsDataURL(file);
 }
-
-$("#imgInp").change(readURL);
+});
+}
+else
+{
+console.log("Your browser does not support File API");
+}
+}

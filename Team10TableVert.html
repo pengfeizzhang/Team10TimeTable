@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<script src="dragDrop.js"></script>
 	<script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -11,14 +10,17 @@
 </head>
 <body>
 
-<button id="clone_button">Clone me!</button>
+	<div id="trash" ondrop="dropped(event)" ondragover="allowDrop(event)">
+		<img id="garbage" src="garbagecan.png">
+	</div>
 
-	 <script src="newDiv.js"> </script>
+	<div id="fileUpload">
+        <h3 for="files">Select Images to Upload: </h3>
+        <input id="files" type="file" multiple/>
+        <output id="result" />
+    </div>
 
-	 <input type='file' id="imgInp" onchange="readURL(this);" />
-        <img id="blah" src="#" alt="your image" />
-
-        <script src="upload1.js"></script>
+    <script src="upload1.js"></script>
 
 	<table id="scheduleTable">
 		<tr>
@@ -75,5 +77,6 @@
 			<img id="dragDrop9" class="droppy" draggable="true" ondragstart="drag(event)" src="soccer.jpg">
 		</div>
 		</div>
+		<script src="dragDrop1.js"></script>
 </body>
 </html>
