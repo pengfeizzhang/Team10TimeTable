@@ -84,14 +84,6 @@ th {
 	box-shadow: 10px 10px 5px 0px rgba(102,99,102,1);
 }
 
-#clock{
-	background-image:url('');
-	background-size:cover;
-	background-position: center;
-	height: 250px; width: 250px;
-	border: 1px solid #bbb;
-}
-
 #clone_wrapper{
 	height:32%;
 	width:22%;
@@ -108,4 +100,18 @@ th {
 	height:100%;
 	width:100%;
 	margin: 0 auto;
+}
+
+#fileUpload{
+font-family: 'Segoe UI';
+font-size: 12pt;
+height: 30vw;
+width:49vw;
+position:absolute;left:51%;top:65%;
+}
+
+.thumbnail{
+
+height: 100px;
+margin: 10px;
 }

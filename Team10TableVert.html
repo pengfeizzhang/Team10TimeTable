@@ -15,10 +15,13 @@
 
 	 <script src="newDiv.js"> </script>
 
-	 <input type='file' id="imgInp" onchange="readURL(this);" />
-        <img id="blah" src="#" alt="your image" />
+	<div id="fileUpload">
+        <label for="files">Select multiple files: </label>
+        <input id="files" type="file" multiple/>
+        <output id="result" />
+    </div>
 
-        <script src="upload1.js"></script>
+    <script src="upload1.js"></script>
 
 	<table id="scheduleTable">
 		<tr>
