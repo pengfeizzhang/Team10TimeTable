@@ -1,23 +1,20 @@
-body {
-	background-color: #FEE8D6;
-}
-
 table, th, td {
    border: 5px solid black;
    text-align: center;
 }
 
 table {
+	background-color: lightblue;
     border-collapse: collapse;
     width: 49%;
-    height: 80%;
+    height: 75%;
     table-layout: fixed;
 }
 
 td{
 	width:50%;
-	height:8.7vw;
-	font-size: 18pt;
+	height:7.5vw;
+	font-size: 14pt;
 }
 
 th {
@@ -25,40 +22,40 @@ th {
 }
 
 #periodOne {
-	height:8.7vw;
-	width:50%;
+	height:7vw;
+	width:32%;
 	text-align: center;
 	margin:auto;
 	border:2px solid black;
 }
 
 #periodTwo {
-	height:8.7vw;
-	width:50%;
+	height:7vw;
+	width:32%;
 	text-align: center;
 	margin:auto;
 	border:2px solid black;
 }
 
 #lunch {
-	height:8.7vw;
-	width:50%;
+	height:7vw;
+	width:32%;
 	text-align: center;
 	margin:auto;
 	border:2px solid black;
 }
 
 #periodThree {
-	height:8.7vw;
-	width:50%;
+	height:7vw;
+	width:32%;
 	text-align: center;
 	margin:auto;
 	border:2px solid black;
 }
 
 #periodFour {
-	height:8.7vw;
-	width:50%;
+	height:7vw;
+	width:32%;
 	text-align: center;
 	margin:auto;
 	border:2px solid black;
@@ -66,7 +63,7 @@ th {
 
 #imageBank {
 	position:absolute; left:51%;
-	height:60%;
+	height:55%;
 	width:48%;
 	background-color:#D0D3D4;
 	overflow-y: scroll;
@@ -83,19 +80,6 @@ th {
 	-moz-box-shadow: 10px 10px 5px 0px rgba(102,99,102,1);
 	box-shadow: 10px 10px 5px 0px rgba(102,99,102,1);
 }
-
-#clone_wrapper{
-	height:32%;
-	width:22%;
-	border:2px solid black;
-	float: left;
-	margin-left: 2%;
-	margin-top: 2%;
-	-webkit-box-shadow: 10px 10px 5px 0px rgba(102,99,102,1);
-	-moz-box-shadow: 10px 10px 5px 0px rgba(102,99,102,1);
-	box-shadow: 10px 10px 5px 0px rgba(102,99,102,1);
-}
-
 .droppy {
 	height:100%;
 	width:100%;
@@ -105,13 +89,27 @@ th {
 #fileUpload{
 font-family: 'Segoe UI';
 font-size: 12pt;
-height: 30vw;
+height: 3vw;
 width:49vw;
 position:absolute;left:51%;top:65%;
 }
 
-.thumbnail{
-
-height: 100px;
-margin: 10px;
+#trash {
+	height:10vw;
+	width:10vw;
+	border:2px solid black;
+	position:absolute;left:87%;top:75%;
 }
+#garbage {
+	height:100%;
+	width:100%;
+}
+
+#title {
+
+}
+
+h1 {
+	text-align: center
+}
+
